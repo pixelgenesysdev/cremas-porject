@@ -1,0 +1,230 @@
+/*
+Theme Name: Salient Child Theme
+Description: This is a custom child theme for Salient
+Theme URI:   https://themeforest.net/item/salient-responsive-multipurpose-theme/4363266
+Author: ThemeNectar
+Author URI:  https://themeforest.net/user/themenectar
+Template: salient
+Version: 1.0
+*/
+
+
+#banner div#inner-row-1 {
+    background-size: cover;
+    background-position: bottom center;
+}
+#banner .owl-dots {
+    position: absolute;
+    top: 63%;
+    left: 9%;
+    transform: translateY(-50%);
+}
+
+#banner .owl-stage {
+    padding: 0 !important;
+}
+
+#banner .owl-dots button.owl-dot span {
+    width: 14px;
+    transform: unset;
+    height: 13px;
+    margin: 0px 3px;
+}
+
+#banner .owl-dots button.owl-dot.active span {
+    width: 49px;
+}
+
+a#btn1 {
+    padding: 13px 30px 11px 30px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: unset;
+}
+
+.form1 .wpcf7-form-control {
+    background: transparent;
+      border: 0px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+    box-shadow:unset !important;    border-radius: 0px;
+    padding: 7px 0 7px 0;
+    margin-bottom: 10px;
+}
+
+.form1 textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 50px;
+}
+
+.form1 input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 0px !IMPORTANT;
+}
+
+#top li#menu-item-42 a span {
+    padding: 12px 35px 12px 35px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: unset;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+#top li#menu-item-42 a {
+    opacity: 1 !IMPORTANT;
+}
+
+#top li#menu-item-42 a :after {
+    display: none;
+}
+
+#top li#menu-item-42 a span:hover {
+    background: #fa8901;
+    border-color: #fa8901 !IMPORTANT;
+}
+
+#footer-outer #nav_menu-5 {
+    text-align: right;
+}
+
+#footer-outer #footer-widgets .widget h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+#footer-outer #footer-widgets ul#menu-social li {
+    display: inline-block;
+    margin: 0px 25px 0px 0px;
+}
+
+#footer-outer #footer-widgets ul#menu-social li i {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#footer-outer #footer-widgets ul#menu-social li a:hover {
+    opacity: 1 !IMPORTANT;
+}
+
+#footer-outer #footer-widgets ul#menu-social li i:hover {
+    color: #e67800;
+}
+
+#footer-outer #footer-widgets form.tnp-form {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+#footer-outer #footer-widgets form.tnp-form input.tnp-submit {
+    position: absolute;
+    right: 30px;
+    width: fit-content;
+    height: 100%;
+    background: transparent !IMPORTANT;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #ff8500;
+}
+
+#footer-outer #footer-widgets form.tnp-form input.tnp-email {
+    background-color: transparent;
+    border-radius: 0px;
+    border: 2px solid;
+    font-family: 'Poppins';
+}
+
+#footer-outer #footer-widgets ul#menu-top-main-menu-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-outer #footer-widgets ul#menu-top-main-menu-2 li {
+    padding: 0 !important;
+}
+
+div#nav_menu-4,div#nav_menu-5 {
+    padding-top: 5rem;
+}
+
+#footer-outer #footer-widgets p {
+    font-size: 14px;
+    padding-right: 6rem;
+}
+
+#footer-outer #footer-widgets .row {
+    padding: 30px 0px 20px;
+}
+
+#product-sec .as2 {
+    margin-top: 5.9pc;
+}
+
+#product-sec  div#re1 {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    right: 20px;
+}
+
+#product-sec  div#re2 {
+    position: absolute;
+    width: 50%;
+   top: 60%;
+    left: 40px;
+}
+
+#product-sec a#btn1 {
+    background: black !IMPORTANT;
+    border-color: black !IMPORTANT;
+    color: white !important;
+    padding: 8px 19px;
+    font-size: 13px;
+}
+
+#product-sec div#re1 .wpb_text_column.wpb_content_element {
+    margin: 0 0 8px 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:999px){
+    
+    #banner div#inner-row-1 {
+    padding-top: 80px !important;
+    background-position: right center;
+    padding-bottom: 369px !important;
+    background-position-x: 70%;
+}
+
+#product-sec .as2 {
+    margin-top: 0px;
+}
+
+#product-sec div#re2 {
+    top: 40%;
+    width: 60%;
+    left: 10%;
+}
+
+#product-sec div#re1 {
+    top: 20%;
+}
+#testimonials .owl-stage {
+    padding: 0;
+}
+
+}

@@ -1,0 +1,155 @@
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.3 MB/1 GB - admin > Start upgrade from 0.0.0
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_emails`] => Created table `wpxk_newsletter_emails`
+)
+
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_sent`] => Created table `wpxk_newsletter_sent`
+)
+
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter`] => Created table `wpxk_newsletter`
+)
+
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_user_logs`] => Created table `wpxk_newsletter_user_logs`
+)
+
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_user_meta`] => Created table `wpxk_newsletter_user_meta`
+)
+
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_stats`] => Created table `wpxk_newsletter_stats`
+)
+
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_logs`] => Created table `wpxk_newsletter_logs`
+)
+
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > Backing up options of 0.0.0
+13-11-2024 22:21:16 - INFO  - 8.6.0 - 10.2 MB/1 GB - admin > End
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.4 MB/1 GB - admin > Start upgrade from 8.6.0
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_emails`] => Created table `wpxk_newsletter_emails`
+)
+
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_sent`] => Created table `wpxk_newsletter_sent`
+)
+
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter`] => Created table `wpxk_newsletter`
+)
+
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_user_logs`] => Created table `wpxk_newsletter_user_logs`
+)
+
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_user_meta`] => Created table `wpxk_newsletter_user_meta`
+)
+
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_stats`] => Created table `wpxk_newsletter_stats`
+)
+
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Array
+(
+    [`wpxk_newsletter_logs`] => Created table `wpxk_newsletter_logs`
+    [wpxk_newsletter_logs.status] => Changed type of wpxk_newsletter_logs.status from int(11) to int
+)
+
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > Backing up options of 8.6.0
+15-11-2024 23:27:47 - INFO  - 8.6.1 - 21.5 MB/1 GB - admin > End
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 103.5 MB/1 GB -  > Start upgrade from 8.6.1
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_emails`] => Created table `wpxk_newsletter_emails`
+)
+
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_sent`] => Created table `wpxk_newsletter_sent`
+)
+
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter`] => Created table `wpxk_newsletter`
+)
+
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_user_logs`] => Created table `wpxk_newsletter_user_logs`
+)
+
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_user_meta`] => Created table `wpxk_newsletter_user_meta`
+)
+
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_stats`] => Created table `wpxk_newsletter_stats`
+)
+
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 107.9 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_logs`] => Created table `wpxk_newsletter_logs`
+    [wpxk_newsletter_logs.status] => Changed type of wpxk_newsletter_logs.status from int(11) to int
+)
+
+17-11-2024 09:07:32 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > Backing up options of 8.6.1
+17-11-2024 09:07:33 - INFO  - 8.6.2 - 108.0 MB/1 GB -  > End
+25-11-2024 18:36:09 - INFO  - 8.6.3 - 23.2 MB/1 GB -  > Start upgrade from 8.6.2
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_emails`] => Created table `wpxk_newsletter_emails`
+)
+
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_sent`] => Created table `wpxk_newsletter_sent`
+)
+
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter`] => Created table `wpxk_newsletter`
+)
+
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_user_logs`] => Created table `wpxk_newsletter_user_logs`
+)
+
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_user_meta`] => Created table `wpxk_newsletter_user_meta`
+)
+
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_stats`] => Created table `wpxk_newsletter_stats`
+)
+
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.6 MB/1 GB -  > Array
+(
+    [`wpxk_newsletter_logs`] => Created table `wpxk_newsletter_logs`
+    [wpxk_newsletter_logs.status] => Changed type of wpxk_newsletter_logs.status from int(11) to int
+)
+
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > Backing up options of 8.6.2
+25-11-2024 18:36:10 - INFO  - 8.6.3 - 23.7 MB/1 GB -  > End
