@@ -67,13 +67,12 @@ class OrderMetaData implements Hookable {
 		return $display_value;
 	}
 
-	public static function prepare_meta_value( float $original_cost, float $additional_cost ): string {
+	public static function prepare_meta_value( float $base_cost, float $additional_cost ): string {
 		return json_encode(
 			[
-				self::BASE       => wc_price( $original_cost ),
+				self::BASE       => wc_price( $base_cost ),
 				self::ADDITIONAL => wc_price( $additional_cost ),
 			]
 		);
 	}
-
 }

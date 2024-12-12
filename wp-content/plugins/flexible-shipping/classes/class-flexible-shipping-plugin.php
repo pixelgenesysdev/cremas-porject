@@ -275,8 +275,7 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 				$this->scripts_version,
 				trailingslashit( $this->get_plugin_assets_url() ),
 				$setting_page_checker,
-				$fs_methods_checker,
-				( new PopupData() )->get_popups()
+				$fs_methods_checker
 			)
 		);
 		$this->add_hookable( new \WPDesk\FS\Onboarding\TableRate\Tracker( $finish_option ) );
@@ -344,7 +343,7 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 		$this->add_hookable( new \WPDesk\FS\TableRate\ShippingMethodsIntegration\Integration() );
 
 		// Upgrade onboarding
-		( new WPDesk\FS\Plugin\UpgradeOnboarding( $this->plugin_info ) )->init_upgrade_onboarding();
+		$this->add_hookable( new WPDesk\FS\Plugin\UpgradeOnboarding( $this->plugin_info ) );
 
 	}
 

@@ -198,17 +198,19 @@ class CostsCalculator {
 		);
 
 		$this->shipping_contents->reset_contents();
+		$this->shipping_contents->set_calculated_shipping_cost( $calculated_cost ?? 0.0 );
 		foreach ( $this->prepared_rules as $rule_index => $calculated_rule ) {
 			$this->shipping_contents = $calculated_rule->process_shipping_contents( $this->shipping_contents );
 
-			$rule_cost = 0.0;
-			$rule_logger = new ArrayLogger();
+			$rule_cost         = 0.0;
+			$rule_logger       = new ArrayLogger();
 			$is_rule_triggered = false;
 			if ( $calculated_rule->is_rule_triggered( $this->shipping_contents, $rule_logger ) ) {
-				$is_rule_triggered = true;
+				$is_rule_triggered  = true;
 				$this->is_triggered = true;
-				$rule_cost = $calculated_rule->get_rule_cost( $this->shipping_contents, $rule_logger );
-				$calculated_cost = $calculation_method_callback( $calculated_cost, $rule_cost );
+				$rule_cost          = $calculated_rule->get_rule_cost( $this->shipping_contents, $rule_logger );
+				$calculated_cost    = $calculation_method_callback( $calculated_cost, $rule_cost );
+				$this->shipping_contents->set_calculated_shipping_cost( $calculated_cost );
 			}
 
 			$this->logger->debug( $calculated_rule->format_for_log( $rule_index + 1 ), $this->logger->get_rule_context( $is_rule_triggered ) );
@@ -279,5 +281,4 @@ class CostsCalculator {
 	public function is_cancel() {
 		return $this->is_cancel;
 	}
-
 }

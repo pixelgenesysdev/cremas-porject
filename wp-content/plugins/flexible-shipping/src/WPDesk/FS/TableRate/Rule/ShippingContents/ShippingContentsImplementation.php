@@ -64,6 +64,8 @@ class ShippingContentsImplementation implements ShippingContents {
 	 */
 	private $meta = [];
 
+	private float $calculated_shipping_cost = 0.0;
+
 	/**
 	 * ShippingContents constructor.
 	 *
@@ -172,10 +174,8 @@ class ShippingContentsImplementation implements ShippingContents {
 			if ( isset( $item['line_tax'] ) ) {
 				$line_total += (float) $item['line_tax'];
 			}
-		} else {
-			if ( isset( $item['line_total'] ) ) {
+		} elseif ( isset( $item['line_total'] ) ) {
 				$line_total = (float) $item['line_total'];
-			}
 		}
 
 		return $line_total;
@@ -258,5 +258,19 @@ class ShippingContentsImplementation implements ShippingContents {
 	 */
 	public function get_meta( string $key ): ?ShippingContentsMeta {
 		return $this->meta[ $key ] ?? null;
+	}
+
+	/**
+	 * @return float
+	 */
+	public function get_calculated_shipping_cost(): float {
+		return $this->calculated_shipping_cost;
+	}
+
+	/**
+	 * @param float $calculated_shipping_cost
+	 */
+	public function set_calculated_shipping_cost( float $calculated_shipping_cost ): void {
+		$this->calculated_shipping_cost = $calculated_shipping_cost;
 	}
 }

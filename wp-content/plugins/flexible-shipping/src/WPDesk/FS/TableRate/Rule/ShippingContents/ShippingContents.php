@@ -73,4 +73,8 @@ interface ShippingContents {
 	public function set_meta( ShippingContentsMeta $meta );
 
 	public function get_meta( string $key ): ?ShippingContentsMeta;
+
+	public function get_calculated_shipping_cost(): float;
+
+	public function set_calculated_shipping_cost( float $calculated_shipping_cost ): void;
 }

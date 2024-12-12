@@ -4,14 +4,19 @@ namespace WPDesk\FS\Plugin;
 
 use FSVendor\Octolize\Onboarding\PluginUpgrade\PluginUpgradeMessage;
 use FSVendor\Octolize\Onboarding\PluginUpgrade\PluginUpgradeOnboardingFactory;
+use FSVendor\WPDesk\PluginBuilder\Plugin\Hookable;
 use FSVendor\WPDesk_Plugin_Info;
 
-class UpgradeOnboarding {
+class UpgradeOnboarding implements Hookable {
 
 	private WPDesk_Plugin_Info $plugin_info;
 
 	public function __construct( WPDesk_Plugin_Info $plugin_info ) {
 		$this->plugin_info = $plugin_info;
+	}
+
+	public function hooks() {
+		add_action( 'init', [ $this, 'init_upgrade_onboarding' ] );
 	}
 
 	public function init_upgrade_onboarding(): void {
@@ -48,5 +53,4 @@ class UpgradeOnboarding {
 		);
 		$upgrade_onboarding->create_onboarding();
 	}
-
 }

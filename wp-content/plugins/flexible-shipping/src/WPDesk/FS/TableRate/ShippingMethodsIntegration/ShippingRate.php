@@ -80,8 +80,10 @@ class ShippingRate implements Hookable {
 		if ( ! is_array( $args ) || $shipping_method->get_option( SettingsFields::FS_CALCULATION_ENABLED, 'no' ) === 'no' ) {
 			return $args;
 		}
-		$cost_calculator = $this->prepare_cost_calculator( $shipping_method, $this->package );
-		$cost_calculator->process_rules();
+		$base_shipping_cost = is_array( $args['cost'] ) ? array_sum( $args['cost'] ) : $args['cost'];
+		$cost_calculator    = $this->prepare_cost_calculator( $shipping_method, $this->package );
+		$cost_calculator->process_rules( $base_shipping_cost );
+		$additional_cost = $cost_calculator->get_calculated_cost() - $base_shipping_cost;
 		if ( ! is_array( $args['meta_data'] ) ) {
 			$args['meta_data'] = [];
 		}
@@ -92,10 +94,10 @@ class ShippingRate implements Hookable {
 				$args['cost'] = [ $args['cost'] ];
 			}
 			$args['meta_data'][ OrderMetaData::META_KEY ] = OrderMetaData::prepare_meta_value(
-				(float) array_sum( $args['cost'] ),
-				$cost_calculator->get_calculated_cost()
+				$base_shipping_cost,
+				$additional_cost
 			);
-			$args['cost'][]                               = $cost_calculator->get_calculated_cost();
+			$args['cost'][]                               = $additional_cost;
 		}
 
 		return $args;
@@ -151,6 +153,4 @@ class ShippingRate implements Hookable {
 			)
 		);
 	}
-
-
 }
